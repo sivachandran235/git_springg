@@ -6,10 +6,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class DemoApplication {
 
+              public static  display("/")
+		{
+			return "welcome";
+		}
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 		
 		System.out.println("welcome to java world");
+		display();
 	}
 
 }
